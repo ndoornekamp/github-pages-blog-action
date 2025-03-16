@@ -3,19 +3,19 @@
 </footer>
 
 <script>hljs.highlightAll();</script>
-</body>
 
 <script>
-var config = {
-    startOnLoad:true,
-    theme: 'neutral',
-    flowchart:{
-        useMaxWidth:false,
-        htmlLabels:true
-    }
-};
-mermaid.initialize(config);
-window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    mermaid.initialize(config = {
+        startOnLoad:true,
+        theme: 'neutral',
+        flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+    });
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 </script>
+
+</body>
 
 </html>
