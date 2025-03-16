@@ -34,7 +34,8 @@
     "front-matter": "^4.0.2",
     "fs-extra": "^10.1.0",
     "showdown": "^2.1.0",
-    "slugify": "^1.6.5"
+    "slugify": "^1.6.5",
+    "mermaid": "^11.5.0"
   },
   "devDependencies": {
     "@types/ejs": "^3.1.1",
