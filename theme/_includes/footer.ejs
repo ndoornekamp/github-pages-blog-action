@@ -3,5 +3,20 @@
 </footer>
 
 <script>hljs.highlightAll();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.5.0/mermaid.min.js"></script>
 </body>
+
+<script>
+var config = {
+    startOnLoad:true,
+    theme: 'neutral',
+    flowchart:{
+        useMaxWidth:false,
+        htmlLabels:true
+    }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
 </html>
