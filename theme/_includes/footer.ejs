@@ -8,14 +8,10 @@
 <script>
     function initMermaid() {
         mermaid.initialize({
-            startOnLoad: true,
-            theme: 'neutral',
-            flowchart: {
-                useMaxWidth: false,
-                htmlLabels: true
-            }
+            startOnLoad: false,
+            theme: 'neutral'
         });
-        mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+        mermaid.init(undefined, document.querySelectorAll('.mermaid'));
     }
 </script>
 
