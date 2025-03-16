@@ -36,6 +36,7 @@ type SiteConfigType = {
     github: string;
     twitter: string;
     medium: string;
+    linkedin: string;
   };
   newsletter: {
     showTwitterBanner?: boolean;

@@ -422,6 +422,10 @@
     color: #00A3EC !important
 }
 
+.link-linkedin:hover {
+    color: #0A66C2 !important
+}
+
 .link-email:hover {
     color: #FF554A !important
 }
@@ -598,7 +602,7 @@ table td {
 
 footer {
     color: #888;
-    font-size: 0.9rem;
+    font-size: 0.5rem;
     font-family: "Lato", -apple-system, Helvetica, Arial, sans-serif;
     font-weight: 400
 }
