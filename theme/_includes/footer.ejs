@@ -2,17 +2,25 @@
     © <%- (new Date()).getFullYear() %> <%- siteConfig.owner.name %>, unless otherwise stated.
 </footer>
 
-<script>hljs.highlightAll();</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.5.0/mermaid.min.js" defer onload="initMermaid()"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.5.0/mermaid.min.js" defer></script>
 <script>
-    function initMermaid() {
-        mermaid.initialize({
-            startOnLoad: false,
-            theme: 'neutral'
+    document.addEventListener("DOMContentLoaded", function() {
+        // Highlight all code blocks except Mermaid
+        document.querySelectorAll("pre code:not(.language-mermaid)").forEach((block) => {
+            hljs.highlightElement(block);
         });
-        mermaid.init(undefined, document.querySelectorAll('.mermaid'));
-    }
+
+        // Initialize Mermaid after Highlight.js
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'neutral',
+            flowchart: {
+                useMaxWidth: false,
+                htmlLabels: true
+            }
+        });
+        mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    });
 </script>
 
 </body>
