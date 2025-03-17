@@ -643,7 +643,7 @@ footer {
     padding: 0;
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 768px) {
     .about__content {
         padding: 0
     }
@@ -679,7 +679,7 @@ footer {
     margin-top: 1rem
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 768px) {
     .feature-list {
         flex-direction: column
     }
@@ -713,7 +713,7 @@ footer {
     margin-right: 1rem
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 768px) {
     .feature:first-child {
         margin-right: 0;
         margin-bottom: 1rem
@@ -749,13 +749,12 @@ footer {
 }
 
 code {
-    background-color: #FAFAFA;
+    background-color: #EAEAEA;
     color: #333;
     font-family: "Roboto Mono", monospace;
     font-size: .95rem;
     font-style: normal;
-    font-weight: 400;
-    letter-spacing: 1px
+    font-weight: 600;
 }
 
 p code, li code {
