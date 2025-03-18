@@ -445,7 +445,7 @@
 
 body {
     margin: auto;
-    max-width: 39rem;
+    max-width: 50rem;
     padding: 1rem;
     background-color: #fff;
     color: #333;
@@ -754,7 +754,7 @@ code {
     font-family: "Roboto Mono", monospace;
     font-size: .95rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400
 }
 
 p code, li code {
