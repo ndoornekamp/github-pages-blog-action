@@ -548,7 +548,6 @@ table {
     overflow-x: auto;
     width: 100%;
     max-width: 100%;
-    font-family: "Alegreya", "Times New Roman", Georgia, serif
 }
 
 table tbody tr:nth-child(odd) {
