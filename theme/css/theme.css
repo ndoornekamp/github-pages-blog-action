@@ -451,15 +451,12 @@ body {
     color: #333;
     font-family: "Lato", -apple-system, Helvetica, Arial, sans-serif;
     font-size: 18px;
-    line-height: 145%
+    line-height: 140%;
+    letter-spacing: -0.003em;
 }
 
 p {
-    margin-bottom: 1.5rem;
-    /* font-family: "Alegreya", "Times New Roman", Georgia, serif; */
-    font-family: "Lato", -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 110%;
-    line-height: 140%
+    line-height: 160%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -510,7 +507,7 @@ img, video {
 }
 
 ol li, ul li {
-    font-size: 110%
+    font-size: 100%
 }
 
 ol li > p, ul li > p {
