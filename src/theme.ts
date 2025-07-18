@@ -155,7 +155,7 @@ export async function prepareTheme(configuration: ConfigurationType) {
 
   async function prepareHome(posts: PostType[]) {
     info('Preparing homepage');
-    posts.sort((a, b) => dayjs(b.date).date() - dayjs(a.date).date());
+    posts.sort((a, b) => dayjs(b.date).valueOf() - dayjs(a.date).valueOf());
 
     const groupedPosts = posts.reduce((aggMap, postItem) => {
       const year = dayjs(postItem.date).format('YYYY');
@@ -164,6 +164,11 @@ export async function prepareTheme(configuration: ConfigurationType) {
 
       return aggMap;
     }, new Map());
+
+    // Sort posts within each year by date (most recent first)
+    for (const [year, yearPosts] of groupedPosts) {
+      yearPosts.sort((a: PostType, b: PostType) => dayjs(b.date).valueOf() - dayjs(a.date).valueOf());
+    }
 
     const homeHtml = await ejs.renderFile(path.join(themePath, 'index.ejs'), {
       siteConfig,
